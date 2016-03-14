@@ -1,8 +1,10 @@
 import sys
 import os
+
 for arg in sys.argv[1:]:
-    file = open(arg, 'r')
-    line = input.readline
-    while line != '':
-        line = input.readline
-        print(line)
+    current = open(arg, r)
+    line = f.readline()
+    while line:
+      print (line)
+      line = current.readline()
+      print (line)
