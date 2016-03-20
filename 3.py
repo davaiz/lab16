@@ -2,8 +2,8 @@ import sys
 import os
 
 for arg in sys.argv[1:]:
-    file = open('arg', 'r')
-    line = file.readline()
+    filee = open('arg', 'r')
+    line = filee.readline()
     while line:
         print (line)
-        line = file.readline()
+        line = filee.readline()
