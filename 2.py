@@ -11,10 +11,10 @@ parser.add_argument(
     nargs=2,
     help='data'
 )
-parser.add_argument(
+parser.add_argument(   # add_argument (... required_True) - обязательный параметр
     '-a',
     '--action',
-    nargs='+',
+    nargs=1,
     metavar='SIGN',
     help='sign'
 )
@@ -43,6 +43,6 @@ elif args.action[0] == '/':
     result = float(args.values[0]) / float(args.values[1])
 
 if args.verbose:
-    print('Result', result)
+    print('result', result)
 
  
